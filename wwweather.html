@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Barnabas Edubio">
+
+    <title>WWWeather: Your Local Weather</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- js -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script rel="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="permission text-center">
+        <a id="permission_geolocation" href="#"><h4>WWWeather would like to use your location</h4></a>
+    </div>
+
+    <div class="page-title text-center">
+        <h1>WWWeather</h1>
+    </div>
+    <div class="weather-image text-center">
+        <img class="weather-icon" src="">
+    </div>
+    <div class="weather-description text-center">
+        <h3></h3> <!-- weather description goes here -->
+        <!-- <h4><span id="temp_unit">P</span></h4> -->
+        <div class="temperature text-center">
+            <h4 id="temp_value"></h4>
+            <a id="change_unit" href="#"><h4 id="temp_unit"></h4></a>
+        </div>
+    </div>
+
+    <footer class="page-footer text-center">
+        <p>by <a id="github_profile" href="https://github.com/barnabasedubio" target="_blank">barnabasedubio</a></p>
+    </footer>
+</body>
+</html>

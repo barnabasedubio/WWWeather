@@ -1,0 +1,85 @@
+body {
+    min-width: 400px;
+    /* "http://res.cloudinary.com/detqxj5bf/image/upload/v1504020580/WWWeather/clearsky.png"*/
+    /* "http://res.cloudinary.com/detqxj5bf/image/upload/v1504007697/WWWeather/default.jpg" */
+    /* background: url("http://res.cloudinary.com/detqxj5bf/image/upload/v1504020580/WWWeather/clearsky.png") no-repeat center center fixed;
+    background-size: cover; */
+    background: url("http://res.cloudinary.com/detqxj5bf/image/upload/v1504007697/WWWeather/default.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+.permission {
+    background-color: rgba(6, 229, 192, 0.6);
+    min-height: 4rem;
+}
+
+.permission h4 {
+    position: relative;
+    top: 1.25rem;
+    color: #FFF;
+}
+
+.permission a:hover {
+    text-decoration: none;
+}
+
+.page-title h1 {
+    font-size: 3rem;
+    color: #FFF;
+}
+
+.weather-image {
+    margin-top: 2rem;
+    min-height: 7rem;
+}
+
+.weather-icon {
+    width: 12rem;
+    fill: #FFF;
+}
+
+.weather-description {
+    margin-top: 3rem;
+}
+
+.weather-description h3 {
+    color: #FFF;
+}
+
+.weather-description h4 {
+    margin-top: 1.5rem;
+}
+
+.temperature h4 {
+    color: #FFF;
+}
+
+.temperature h4, .temperature a {
+    display: inline-block;
+}
+
+.temperature a h4 {
+    color: orange !important;
+}
+
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    margin-bottom: 0 !important;
+}
+
+.page-footer p, .page-footer a {
+    color: #FFF;
+}
+.page-footer p:hover {
+    color: #FFF;
+}
