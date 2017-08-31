@@ -1,18 +1,23 @@
+
+html {
+    height: 100%;
+}
+
 body {
     min-width: 400px;
-    /* "http://res.cloudinary.com/detqxj5bf/image/upload/v1504020580/WWWeather/clearsky.png"*/
-    /* "http://res.cloudinary.com/detqxj5bf/image/upload/v1504007697/WWWeather/default.jpg" */
-    /* background: url("http://res.cloudinary.com/detqxj5bf/image/upload/v1504020580/WWWeather/clearsky.png") no-repeat center center fixed;
-    background-size: cover; */
-    background: url("http://res.cloudinary.com/detqxj5bf/image/upload/v1504007697/WWWeather/default.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    min-height: 80%;
+    background: url("http://res.cloudinary.com/detqxj5bf/image/upload/v1504007697/WWWeather/default.jpg") no-repeat center center fixed;
     background-size: cover;
+    position: relative; /* this plus absolute footer makes footer stick to the bottom */
 }
 
 h4 {
     font-size: 1.2rem;
+}
+
+.main-container {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .permission {
@@ -23,7 +28,6 @@ h4 {
 .permission h4 {
     position: relative;
     top: 1.25rem;
-    color: #FFF;
 }
 
 .permission a:hover {
@@ -32,12 +36,10 @@ h4 {
 
 .page-title h1 {
     font-size: 3rem;
-    color: #FFF;
 }
 
 .weather-image {
     margin-top: 2rem;
-    min-height: 7rem;
 }
 
 .weather-icon {
@@ -46,19 +48,16 @@ h4 {
 }
 
 .weather-description {
-    margin-top: 3rem;
+    position: relative;
+    bottom: 3rem;
 }
 
 .weather-description h3 {
-    color: #FFF;
-}
-
-.weather-description h4 {
     margin-top: 1.5rem;
 }
 
-.temperature h4 {
-    color: #FFF;
+.temperature {
+    margin-top: 3rem;
 }
 
 .temperature h4, .temperature a {
@@ -69,17 +68,25 @@ h4 {
     color: orange !important;
 }
 
-
-.page-footer {
+footer {
+    min-width: 99.5%;
+    max-width: 99.5%;
     position: absolute;
     bottom: 0;
-    min-width: 100%;
-    margin-bottom: 0 !important;
 }
 
-.page-footer p, .page-footer a {
+/* white colors matter */
+.permission h4,
+.page-title h1,
+.weather-description h3,
+.temperature h4,
+.page-footer p,
+.page-footer p:hover,
+.page-footer a {
     color: #FFF;
 }
-.page-footer p:hover {
-    color: #FFF;
+
+h1, h3, h4, p {
+    text-shadow: 0.5rem 0.5rem 0.75rem #000;
 }
+
