@@ -35,6 +35,7 @@ function getWeather() {
     $(".permission").hide();
     $("body").css("margin-top", "4.5rem");
 
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (pos) {
             // save the coordinates as longitude and latitude
@@ -62,8 +63,10 @@ function getWeather() {
                     $(".weather-icon").attr("src", weatherIcon);
 
                     var description = data.weather[0].description + " in " + data.name + ", " + data.sys.country;
+                    description = capitalizeFirstLetter(description);
                     var celsius = data.main.temp;
-                    var fahrenheit = (celsius * (9/5)) + 32;
+                    // var fahrenheit = (celsius * (9/5)) + 32;
+                    var fahrenheit = Math.round((celsius * (9/5)) + 32);
                     var unit = "C";
                     $(".weather-description h3").text(description);
                     // $(".weather-description h4").text(celsius + "° " + unit);
@@ -114,4 +117,8 @@ function getIcon(backGround, id) { // id is only important for the 'windy' condi
     if (backGround === thunderStorm) return cloudLightning;
     if (backGround === snow) return snowflake;
     if (backGround === mist) return cloudFog;
+}
+
+function capitalizeFirstLetter(string) {
+    return string[0].toUpperCase() + string.slice(1);
 }
