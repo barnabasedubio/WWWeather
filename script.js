@@ -64,7 +64,7 @@ function getWeather() {
 
                     var description = data.weather[0].description + " in " + data.name + ", " + data.sys.country;
                     description = capitalizeFirstLetter(description);
-                    var celsius = data.main.temp;
+                    var celsius = Math.round(data.main.temp);
                     // var fahrenheit = (celsius * (9/5)) + 32;
                     var fahrenheit = Math.round((celsius * (9/5)) + 32);
                     var unit = "C";
